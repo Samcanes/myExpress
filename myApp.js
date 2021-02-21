@@ -93,6 +93,7 @@ app.post("/name", bodyParser.urlencoded({
         extended: false
     }),
     (req, res) => {
+        console.log("run hota hai")
         var firstName = req.body.first;
         var lastName = req.body.last;
         var { first: firstName, last: lastName } = req.body;
